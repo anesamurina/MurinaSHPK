@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MurinaSHPK</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1rem;
+    }
+
+    .hero {
+      background: url('background.png') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+    }
+
+    .section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .motorcycles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .bike {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .bike:hover {
+      transform: translateY(-5px);
+    }
+
+    .bike img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .bike h4 {
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Murina SH.P.K</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Your Ride Starts Here</h2>
+  </div>
+
+  <section id="about" class="section">
+    <h3>About Us</h3>
+    <p>At Murina SHPK, we are passionate about motorcycles. Whether you're a seasoned rider or just getting started, we offer a wide selection of new and used bikes, expert advice, and top-notch service.</p>
+  </section>
+
+  <section id="inventory" class="section">
+    <h3>Our Inventory</h3>
+    <div class="motorcycles">
+      <div class="bike">
+        <img src="motorcycle1.jpg" alt="Sport Bike" />
+        <h4>Yamaha X-Max</h4>
+        <p>Powerful performance and sleek design for thrill seekers.</p>
+      </div>
+      <div class="bike">
+        <img src="motorcycle2.jpg" alt="Cruiser Bike" />
+        <h4>Kymco People-S</h4>
+        <p>Classic cruiser with timeless appeal and road-dominating power.</p>
+      </div>
+      <div class="bike">
+        <img src="motorcycle3.jpg" alt="Adventure Bike" />
+        <h4>Vespa GTS </h4>
+        <p>Ready for any adventure, on or off-road.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact Us</h3>
+    <p>Have questions or want to schedule a test ride? Reach out at <strong>contact: 044-123-456</strong> or visit our showroom Mon-Sat, 9am to 6pm.</p>
+    <div id="location">
+        <p><strong>You can also find us in this location:</strong></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4897.268097175713!2d21.615921032336022!3d42.53189375280865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354ef6e4023b66d%3A0xe595b9397c28e64c!2sMURINA%20sh.p.k!5e0!3m2!1sen!2s!4v1706978514683!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+  </section>
+
+  <footer>
+    &copy; 2025 motorcycle dealership. All rights reserved.
+  </footer>
+</body>
+</html>
